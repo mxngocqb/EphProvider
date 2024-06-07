@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EphProvider", "EphProvider\EphProvider.csproj", "{765D550E-F853-41B7-A927-8A50666E3DDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{765D550E-F853-41B7-A927-8A50666E3DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765D550E-F853-41B7-A927-8A50666E3DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765D550E-F853-41B7-A927-8A50666E3DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765D550E-F853-41B7-A927-8A50666E3DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60F924B6-C510-4E19-A58A-0254F7D969F4}
+	EndGlobalSection
+EndGlobal
