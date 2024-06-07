@@ -23,4 +23,4 @@ The application leverages RSA signature verification to ensure the integrity and
 
 Begin by cloning this repository to your local machine.
 ```bash
-git clone https://github.com/mxngocqb/RSA.git
+git clone https://github.com/mxngocqb/EphProvider.git
