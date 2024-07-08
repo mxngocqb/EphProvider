@@ -24,5 +24,7 @@ namespace EphProvider.Data
             });
         }
         public DbSet<EphProvider.Models.User> User { get; set; } = default!;
+        public DbSet<EphProvider.Models.PVT> PVT { get; set; } = default!;
+        public DbSet<EphProvider.Models.Galileo> Galileo { get; set; } = default!;
     }
 }

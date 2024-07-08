@@ -101,7 +101,7 @@ namespace EphProvider.Controllers
         {
             _context.User.Add(user);
             await _context.SaveChangesAsync();
-
+           
             return CreatedAtAction("GetUser", new { username = user.Username }, user);
         }
 

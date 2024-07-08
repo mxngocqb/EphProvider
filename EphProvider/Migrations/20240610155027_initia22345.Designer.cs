@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EphProvider.Migrations
 {
     [DbContext(typeof(EphProviderContext))]
-    [Migration("20240605084245_Initial")]
-    partial class Initial
+    [Migration("20240610155027_initia22345")]
+    partial class initia22345
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,6 +43,10 @@ namespace EphProvider.Migrations
 
                     b.Property<int>("SvId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Timestamp")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Tow")
                         .HasColumnType("int");

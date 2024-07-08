@@ -2,7 +2,7 @@
 
 namespace EphProvider.Models
 {
-    public class NavMessage
+    public class Galileo
     {
         public int Id { get; set; }
         [Required] //Data Annotation

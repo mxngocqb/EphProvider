@@ -124,12 +124,16 @@ namespace EphProvider.Controllers
         // POST: api/NavMessages
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        [Authorize]
+        [Authorize(Policy = "UserPolicy")]
+
         public async Task<ActionResult<NavMessage>> PostNavMessage(NavMessage navMessage)
         {
             byte[] dataBytes = Encoding.UTF8.GetBytes(navMessage.NavigationMessage);
             byte[] signature = SignData(dataBytes, privateKey);
             navMessage.Signature = Convert.ToBase64String(signature);
+            // Lấy thời gian hiện tại
+            DateTime currentTime = DateTime.UtcNow; 
+            navMessage.Timestamp = currentTime.Subtract(new DateTime(1970, 1, 1)).TotalSeconds.ToString();
             _context.NavMessage.Add(navMessage);
             await _context.SaveChangesAsync();
 

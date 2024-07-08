@@ -5,7 +5,7 @@
 namespace EphProvider.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class initia22345 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,7 +20,8 @@ namespace EphProvider.Migrations
                     Week = table.Column<int>(type: "int", nullable: false),
                     Tow = table.Column<int>(type: "int", nullable: false),
                     NavigationMessage = table.Column<string>(type: "nvarchar(2048)", maxLength: 2048, nullable: false),
-                    Signature = table.Column<string>(type: "nvarchar(2048)", maxLength: 2048, nullable: true)
+                    Signature = table.Column<string>(type: "nvarchar(2048)", maxLength: 2048, nullable: true),
+                    Timestamp = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
